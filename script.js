@@ -374,12 +374,12 @@ function setPop(){
 
 function setCondition (){
   
-  conditionMain.innerHTML = `<img src="http://openweathermap.org/img/wn/${forecastWeather.hourly[0].weather[0].icon}.png" alt="">${forecastWeather.hourly[0].weather[0].main}`
+  conditionMain.innerHTML = `<img src="https://openweathermap.org/img/wn/${forecastWeather.hourly[0].weather[0].icon}.png" alt="">${forecastWeather.hourly[0].weather[0].main}`
   if(forecastWeather.hourly[0].weather[0].main=="thunderstorm")
-  { conditionMain.innerHTML = `<img src="http://openweathermap.org/img/wn/${forecastWeather.hourly[0].weather[0].icon}.png" alt="">STORM` }
+  { conditionMain.innerHTML = `<img src="https://openweathermap.org/img/wn/${forecastWeather.hourly[0].weather[0].icon}.png" alt="">STORM` }
 
   iconsDay.forEach((item, index)=> {
-    item.innerHTML = `<img src="http://openweathermap.org/img/wn/${forecastWeather.daily[index].weather[0].icon}.png" alt="">`
+    item.innerHTML = `<img src="https://openweathermap.org/img/wn/${forecastWeather.daily[index].weather[0].icon}.png" alt="">`
   })
 }
 
