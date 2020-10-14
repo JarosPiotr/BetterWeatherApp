@@ -68,6 +68,8 @@ const boxesValue = [...document.querySelectorAll('.value')]
 const firstGraph = [...document.querySelectorAll('.line')]
 const forwardPopArray = [...document.querySelectorAll('.rain')]
 const iconsDay = [...document.querySelectorAll('.icon-day')]
+const forwardInfo = document.querySelector('.forward-info')
+const currnetInfo = document.querySelector('.current-info')
 const hoursOrder = []
 const dayOrder = []
 let minmaxBackArray = []
@@ -105,12 +107,16 @@ citySelectButton.addEventListener('click',() => {
   if(searchBar.classList.value == "search-bar-off"){
    searchBar.classList.value = "search-bar-on"
    citySelectButton.children[0].classList.value = "fas fa-times"
+   currnetInfo.classList.value = "current-info-off"
+   forwardInfo.classList.value = "forward-info-off"
    searchBar.children[0].focus()
   } else {
     searchBar.classList.value = "search-bar-off"
    citySelectButton.children[0].classList.value = "fas fa-globe-europe"
    submitCityButton.classList.value = "search-submit-off"
    searchBar.children[0].value = ""
+   currnetInfo.classList.value = "current-info"
+   forwardInfo.classList.value = "forward-info"
    searchBar.children[0].placeholder = "country"
    matchList.classList.value = "match-list-off"
    matchListShow.innerHTML = ""
@@ -295,6 +301,8 @@ function setFinalCity(){
             searchedCountry = ""
             searchedCity = ''
             citiesToShow = []
+            currnetInfo.classList.value = "current-info"
+   forwardInfo.classList.value = "forward-info"
             
             searchBar.classList.value = "search-bar-off"
             setTimeout(() =>{
@@ -308,9 +316,9 @@ function setFinalCity(){
                setPop()
                setCondition()
                
-             },500)
+             },1000)
               
-            },500)                        
+            },1000)                        
       })
   })
 }
