@@ -1,0 +1,254 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>WeatherAPP</title>
+</head>
+
+<body>
+    <div class="app-title"><h1 class='titleh1'>WeatherAPP</h1>
+    <p class="title-info">Please, type your country and city</p></div>
+    <div class="search-bar-on">
+        <input class="search-value" placeholder="country" type="text">
+        <button class="search-submit-off">
+            <i class="fas fa-check-circle"></i>
+            
+        </button>
+        <div class="match-list-off">
+            <ul class="match-ul">
+                
+            </ul>
+        </div>
+
+    </div>
+    <div class="page main-page-off">
+        <header>
+            <div class="burger-icon">
+                <div class="strip strip-1"></div>
+                <div class="strip strip-2"></div>
+                <div class="strip strip-3"></div>
+            </div>
+            <div class="info">
+                <span class="city-name">Hong Kong</span>
+            </div>
+            <div class="city-select">
+                <i class="fas fa-globe-europe"></i>
+            </div>
+            <div class="date"></div>
+        </header>
+        <div class="current-info">
+
+            <div class="current-temp">
+                <span class="time"> Clear</span>
+                <span class="temp">0<sup>&deg;</sup></span>
+            </div>
+            <div class="minmax-temp">
+                <span class="max">0<sup>&deg;</sup>C</span>
+                <span class="min">0<sup>&deg;</sup>C</span>
+            </div>
+        </div>
+        <div class="forward-info">
+            <div class="graph">
+                <div class="line line-0">
+                    <span class="graph-temp">0<span>&deg;</span></span>
+                </div>
+            <span class="show-hour now"></span>
+        </div>
+            <div class="graph">
+                <div class="line line-1">
+                    <span class="graph-temp">0<span>&deg;</span></span>
+                </div>
+            <span class="show-hour"></span>
+        </div>
+            <div class="graph">
+                <div class="line line-2">
+                    <span class="graph-temp">0<span>&deg;</span></span>
+                </div>
+            <span class="show-hour"></span>
+        </div>
+            <div class="graph">
+                <div class="line line-3">
+                    <span class="graph-temp">0<span>&deg;</span></span>
+                </div>
+            <span class="show-hour"></span>
+        </div>
+            <div class="graph">
+                <div class="line line-4">
+                    <span class="graph-temp">0<span>&deg;</span></span>
+                </div>
+                <span class="show-hour"></span>
+            </div>
+            <div class="graph">
+                <div class="line line-5">
+                    <span class="graph-temp">0<span>&deg;</span></span>
+                </div>
+                <span class="show-hour"></span>
+            </div>
+        </div>
+    </div>
+    
+<!-- DETAIL PAGE -->
+
+    <div class="page detail-page-off">
+        <div class="weather-details-header">
+            <span >Details</span>
+            <div class="detail-strip"></div>
+            <div class="back-icon">
+                <i class="fas fa-times"></i></div>
+        </div>
+        <div class="weather-details">
+            
+            <div class="detail-box feels-like">
+                <i class="fas fa-thermometer-half"></i>
+                <span class="title">Feels like</span>
+            <span class='value'>0<span>&deg;</span></span>
+        </div>
+            <div class="detail-box wind-speed">
+                <i class="fas fa-wind"></i>
+                <span class="title">Wind</span>
+                <span class='value'>0</span>
+            </div>
+            <div class="detail-box humidity">
+                <i class="fas fa-tint"></i>
+                <span class="title">Humidity</span>
+                <span class='value'>0</span>
+            </div>
+            <div class="detail-box pressure">
+                <i class="fas fa-tachometer-alt"></i>
+                <span class="title">Pressure</span>
+                <span class='value'>0</span>
+            </div>
+            <div class="detail-box visibility">
+                <i class="fas fa-eye"></i>
+                <span class="title">Visibility</span>
+                <span class='value'>0</span>
+            </div>
+            <div class="detail-box dew-point">
+                <i class="fas fa-temperature-low"></i>
+                <span class="title">Dew point</span>
+                <span class='value'>0<span>&deg;</span></span>
+            </div>
+        </div>
+        <div class="weather-details-header">
+             <span>Chance of rain</span><div class="detail-strip"></div> 
+        </div>
+        <div class="rain-chance">
+            <div class="graph-rain">
+                <div class="rain rain-0">
+                    <span>x</span>
+            </div>
+            <span class="show-hour now"></span>
+        </div>
+            <div class="graph-rain">
+                <div class="rain rain-1">
+                    <span>x</span>
+                </div>
+            <span class="show-hour"></span>
+        </div>
+            <div class="graph-rain">
+                <div class="rain rain-2">
+                    <span>x</span>
+                </div>
+            <span class="show-hour"></span>
+        </div>
+            <div class="graph-rain">
+                <div class="rain rain-3">
+                    <span>x</span>
+                </div>
+            <span class="show-hour"></span>
+        </div>
+            <div class="graph-rain">
+                <div class="rain rain-4">
+                    <span>x</span>
+                </div>
+                <span class="show-hour"></span>
+            </div>
+            <div class="graph-rain">
+                <div class="rain rain-5">
+                    <span>x</span>
+                </div>
+                <span class="show-hour"></span>
+            </div>
+
+        </div>
+        <div class="weather-details-header">
+            <span>Next 7 days</span><div class="detail-strip"></div> </div>
+        <div class="forward-week">
+             <div class="day-box day-0">
+                 <span class="day">day</span>
+                 <i class="icon-day"></i>
+                 <span class="maxtemp">22<span>&deg;</span></span>
+                 <span class="mintemp">22<span>&deg;</span></span>
+
+
+
+            </div>
+             <div class="day-box day-1">
+                <span class="day"></span>
+                <i class="icon-day"></i>
+                <span class="maxtemp">22<span>&deg;</span></span>
+                <span class="mintemp">22<span>&deg;</span></span>
+             </div>
+             <div class="day-box day-2">
+                <span class="day"></span>
+                <i class="icon-day"></i>
+                <span class="maxtemp">22<span>&deg;</span></span>
+                <span class="mintemp">22<span>&deg;</span></span>
+             </div>
+             <div class="day-box day-3">
+                <span class="day"></span>
+                <i class="icon-day"></i>
+                <span class="maxtemp">22<span>&deg;</span></span>
+                <span class="mintemp">22<span>&deg;</span></span>
+             </div>
+             <div class="day-box day-4">
+                <span class="day"></span>
+                <i class="icon-day"></i>
+                <span class="maxtemp">22<span>&deg;</span></span>
+                <span class="mintemp">22<span>&deg;</span></span>
+             </div>
+             <div class="day-box day-5">
+                <span class="day"></span>
+                <i class="icon-day"></i>
+                <span class="maxtemp">22<span>&deg;</span></span>
+                <span class="mintemp">22<span>&deg;</span></span>
+             </div>
+             <div class="day-box day-6">
+                <span class="day"></span>
+                <i class="icon-day"></i>
+                <span class="maxtemp">22<span>&deg;</span></span>
+                <span class="mintemp">22<span>&deg;</span></span>
+             </div>
+
+        </div>
+    </div>
+    <!-- DETAIL PAGE -->
+
+    <!-- <div class="page match-page-off">
+        <ul>
+            <li>Czeladź, Poland</li>
+            <li>Warsaw, Poland</li>
+            <li>Los Angeles, USA</li>
+            <li>Lisbon, Portugal</li>
+            <li>Lisbon, Portugal</li>
+            <li>Czeladź, Poland</li>
+            <li>Warsaw, Poland</li>
+            <li>Los Angeles, USA</li>
+            <li>Lisbon, Portugalsssssss</li>
+            <li>Lisbon, Portugal</li>
+        </ul>
+    </div>  -->
+    <script src="script.js"></script>
+</body>
+
+</html>
